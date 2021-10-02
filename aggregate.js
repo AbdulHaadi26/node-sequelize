@@ -2,7 +2,7 @@ const { Items, sequelize } = require("./sequelize/db");
 const express = require('express');
 const router = express.Router();
 
-router.get('/item/create', async (req, res) => {
+router.put('/item/create', async (req, res) => {
     await Items.bulkCreate([
         {
             name: 'Gaiters',
