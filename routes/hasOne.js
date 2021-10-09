@@ -1,4 +1,4 @@
-const { Book, Author } = require("./sequelize/db");
+const { Book, Author } = require("../sequelize/db");
 const express = require('express');
 const router = express.Router();
 

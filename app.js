@@ -18,11 +18,11 @@ app.use(compression({ filter: shouldCompress }));
 
 sequelize.sync({ force: true });
 
-app.use('/belongsTo', require('./belongsTo'));
-app.use('/hasMany', require('./hasMany'));
-app.use('/hasOne', require('./hasOne'));
-app.use('/belongsToMany', require('./belongsToMany'));
-app.use('/aggregate', require('./aggregate'));
+app.use('/belongsTo', require('./routes/belongsTo'));
+app.use('/hasMany', require('./routes/hasMany'));
+app.use('/hasOne', require('./routes/hasOne'));
+app.use('/belongsToMany', require('./routes/belongsToMany'));
+app.use('/aggregate', require('./routes/aggregate'));
 
 function shouldCompress(req, res) {
     if (req.headers["x-no-compression"]) return false;

@@ -1,4 +1,4 @@
-const { Movie, Actor } = require("./sequelize/db");
+const { Movie, Actor } = require("../sequelize/db");
 const express = require('express');
 const router = express.Router();
 
