@@ -32,6 +32,8 @@ router.get('/tutorial/all', async (req, res) => {
         include: [
             {
                 model: Comment,
+                //attributes: ['id']
+                //where: { condition }
             },
         ]
     });
